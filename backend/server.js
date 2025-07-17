@@ -6,8 +6,7 @@ import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productRoute.js';
 import connectCloudinary from './config/cloudinary.js';
 import cartRouter from './routes/cartRoute.js';
-import orderRouter from './routes/orderRoute.js';
-import serverless from 'serverless-http';  
+import orderRouter from './routes/orderRoute.js'; 
    
 
 
@@ -34,7 +33,6 @@ app.get('/',(req,res)=>{
     res.send("API Working")
 })
 
-// app.listen(port, ()=>{
-//     console.log("Server Started On Port : "+port)
-// })
-export const handler = serverless(app)
+app.listen(port, ()=>{
+    console.log("Server Started On Port : "+port)
+})
