@@ -3,7 +3,6 @@ import Title from "./../components/Title";
 import CartTotal from "../components/CartTotal";
 import { assets } from "../assets/assets";
 import { ShopContext } from "../context/ShopContext";
-import { backendUrl } from "./../../../admin/src/App";
 import { toast } from "react-toastify";
 import axios from "axios";
 
