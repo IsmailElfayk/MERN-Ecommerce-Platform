@@ -9,6 +9,7 @@ import Orders from "./pages/Orders";
 import Login from "./components/Login";
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL
+export const userUrl = import.meta.env.VITE_USER_URL
 export const currency = '$'
 
 
