@@ -36,7 +36,7 @@ const Navbar = () => {
   window.removeEventListener("resize", handleResize);
 
   const toAdmin = ()=>{
-    window.location.replace(adminUrl);
+    window.location.href = adminUrl;
   }
 
   return (
