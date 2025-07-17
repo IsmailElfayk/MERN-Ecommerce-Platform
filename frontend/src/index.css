@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr {
+ display: block;
+}
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width:640px){
+  .sideMenu a:hover{
+    background-color: #414141;
+    color: white;
+  }
+  .sideMenu a.active{
+    background-color: black;
+    color: white;
+  }
+}
+
+input:focus::placeholder{
+  opacity: 0;
+  transition: .3s;
+}
+
+
+body{
+cursor: url('./assets/cursor.svg'), default;
+}
+a,button,.cursor-pointer{
+    cursor: url('./assets/pointer.svg'), pointer;
+  }
+
+.bg-black{
+  cursor: url('./assets/cursor1.svg'), default;
+}
+a.bg-black:hover,
+button.bg-black:hover{
+  cursor: url('./assets/pointer-white.svg'), default;
+}
